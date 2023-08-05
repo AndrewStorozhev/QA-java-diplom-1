@@ -25,7 +25,7 @@ import static org.junit.Assert.assertTrue;
         Ingredient ingredientSauce;
 
         @Before
-        public void setUP(){
+        public void setUp(){
              burger = new Burger();
         }
 

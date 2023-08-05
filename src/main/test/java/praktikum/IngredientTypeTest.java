@@ -3,19 +3,19 @@ package praktikum;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static praktikum.IngredientType.FILLING;
+import static praktikum.IngredientType.SAUCE;
 
 public class IngredientTypeTest {
-    private IngredientType ingredientType;
 
     @Test
     public void ingredientTypeSauceTest() {
-        assertEquals(ingredientType.SAUCE, IngredientType.valueOf("SAUCE"));
-        System.out.println(ingredientType.SAUCE);
-        System.out.println(IngredientType.valueOf("SAUCE"));
+        assertEquals(SAUCE, IngredientType.valueOf("SAUCE"));
+
     }
     @Test
     public void ingredientTypeFillingTest() {
-        assertEquals(ingredientType.FILLING, IngredientType.valueOf("FILLING"));
+        assertEquals(FILLING, IngredientType.valueOf("FILLING"));
 
     }
 }
